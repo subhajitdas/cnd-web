@@ -1,0 +1,46 @@
+{
+  "name": "cnd-web",
+  "version": "1.0.0",
+  "description": "Web portal for \"cnd\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:app && npm run build:server",
+    "build:app": "node_modules/.bin/webpack --config build/webpack.app.dist.babel.js",
+    "build:server": "node_modules/.bin/webpack --config build/webpack.server.dist.babel.js",
+    "clean": "node_modules/.bin/rimraf ./dist",
+    "prebuild": "npm run clean",
+    "start": "node_modules/.bin/babel-node ./src/server/index.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhajitdas/cnd-web.git"
+  },
+  "keywords": [],
+  "author": "Subhajit Das<subhajit@live.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/subhajitdas/cnd-web/issues"
+  },
+  "homepage": "https://github.com/subhajitdas/cnd-web#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-middleware": "^3.1.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
