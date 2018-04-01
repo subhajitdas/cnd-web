@@ -11,6 +11,11 @@ export default {
         path: path.join(__dirname, '../dist'),
         filename: 'scripts/[name].js'
     },
+    resolve: {
+        alias: {
+            'configureStore': './store/configureStore.dist'
+        }
+    },
     module: {
         rules: [
             {

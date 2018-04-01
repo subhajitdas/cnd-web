@@ -12,13 +12,18 @@ export default {
         filename: '[name].js',
         publicPath: '/scripts'
     },
+    resolve: {
+        alias: {
+            'configureStore': './store/configureStore.dev'
+        }
+    },
     devtool: 'inline-source-map',
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             }
         ]
     }
