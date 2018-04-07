@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/subhajitdas/cnd-web#readme",
   "dependencies": {
+    "axios": "0.18.0",
     "bootstrap": "4.0.0",
     "express": "^4.16.3",
     "prop-types": "^15.6.1",

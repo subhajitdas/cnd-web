@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Link } from 'react-router-dom';
-import DashboardPage from './DashboardPage.jsx';
-import ResourceCategoryPage from './resources/ResourceManagementPage.jsx';
+import DashboardPage from './dashboard/DashboardPage.jsx';
+import ServiceManagementPage from './services/ServiceManagementPage.jsx';
 
 class App extends React.Component {
     constructor(props) {
@@ -34,7 +34,7 @@ class App extends React.Component {
                 </nav>
                 <div>
                     <Route path="/dashboard" component={DashboardPage} />
-                    <Route path="/category/:category" component={ResourceCategoryPage} />
+                    <Route path="/category/:category" component={ServiceManagementPage} />
                 </div>
             </div >
         );
