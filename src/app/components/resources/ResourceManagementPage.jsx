@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Dashboard extends React.Component {
+class ResourceManagementPage extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +9,10 @@ class Dashboard extends React.Component {
     render() {
         return (
             <div>
-                Dashboard
+                {this.props.match.params.category}
             </div>
         );
     }
 }
 
-export default Dashboard;
+export default ResourceManagementPage;

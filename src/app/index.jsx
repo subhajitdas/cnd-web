@@ -5,6 +5,7 @@ import configureStore from 'configureStore';
 import createSagaMiddleware, { END } from 'redux-saga';
 import { BrowserRouter } from 'react-router-dom';
 import App from './components/App.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const sagaMiddleware = createSagaMiddleware();
 const store = configureStore(sagaMiddleware);
